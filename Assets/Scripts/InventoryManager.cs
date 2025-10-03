@@ -17,7 +17,8 @@ public class InventoryManager : MonoBehaviour
 
     void RefreshUI()
     {
-        foreach (Transform t in inventoryContainer) Destroy(t.gameObject);
+        foreach (Transform t in inventoryContainer) 
+            Destroy(t.gameObject);
 
         foreach (var item in ownedItems)
         {

@@ -2,17 +2,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using TMPro;
+
 public class ShopManager : MonoBehaviour
 {
     // fill in inspector with ScriptableObject assets
     public List<ShopItem> shopItems; 
+
     // content transform of ShopScrollView
+    [SerializeField]
     public Transform shopContainer;  
     public GameObject shopItemPrefab;
     public InventoryManager inventoryManager;
 
+    [SerializeField]
     public int playerGold = 100;
-    public Text goldText;
+    [SerializeField]
+    public TextMeshProUGUI goldText;
 
     void Start()
     {
@@ -22,7 +28,8 @@ public class ShopManager : MonoBehaviour
 
     void UpdateGoldUI()
     {
-        if (goldText != null) goldText.text = $"Gold: {playerGold}";
+        if (goldText != null) 
+            goldText.text = $"Gold: {playerGold}";
     }
 
     void PopulateShop()

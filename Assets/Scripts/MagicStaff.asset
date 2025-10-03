@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b590f79e3e5521a45b31cd06fed0596e, type: 3}
   m_Name: MagicStaff
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
-  description: 
-  price: 0
+  itemName: Magic staff
+  icon: {fileID: 21300000, guid: b98499304b058e849bbf337072f3a148, type: 3}
+  description: Cast several spells
+  price: 500
